@@ -12,11 +12,6 @@ const SupportProject: NextPage = () => {
     return <Container className="page">
         <h1>Productos</h1>
 
-        {error && <Alert severity="error">
-            <AlertTitle>Error</AlertTitle>
-            Ha habido un problema al intentar obtener los datos. Por favor, intente nuevamente en un rato.
-        </Alert>}
-
         {data?.map(product => (
             <Card key={product.id} style={{ marginTop: "1em" }}>
                 <CardContent>
